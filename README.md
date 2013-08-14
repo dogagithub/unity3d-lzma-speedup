@@ -1,10 +1,9 @@
 WINDOWS UNITY3D LZMA SPEEDUP
 =============================
->fork这个项目，是因为我第一份游戏开发工作用的u3d开发页游，在实际环境中运行的时候总是莫名崩溃，说是申请8MB内存失败。
+>   fork这个项目，是因为我第一份游戏开发工作用的u3d开发页游，在实际环境中运行的时候总是莫名崩溃，说是申请8MB内存失败。
+    其实就是因为打包后的字典需求内存空间8MB，而我们项目的动态资源包非常多，所以就崩溃了。。。
+    怕作者删掉项目，而我暂时用不上，因此fork
 
- 其实就是因为打包后的字典需求内存空间8MB，而我们项目的动态资源包非常多，所以就崩溃了。。。
- 
- 怕作者删掉项目，而我暂时用不上，因此fork
 How to use
 ----------
 1. Rename your C:\Program Files (x86)\Unity\Editor\Data\Tools\lzma.exe to lzma_real.exe. You can also make a separate backup to a safe place if you wish.
