@@ -9,6 +9,24 @@ How to use
 1. Rename your C:\Program Files (x86)\Unity\Editor\Data\Tools\lzma.exe to lzma_real.exe. You can also make a separate backup to a safe place if you wish.
 2. Copy lzma.exe from the "windows binaries" directory (or your custom build from sources) into your Unity3D tools folder
 
+
+>            System.Console.WriteLine("\nUsage:  LZMA <e|d> [<switches>...] inputFile outputFile\n" +
+            	"  e: encode file\n" +
+            	"  d: decode file\n" +
+            	"  b: Benchmark\n" +
+            	"<Switches>\n" +
+            	// "  -a{N}:  set compression mode - [0, 1], default: 1 (max)\n" +
+            	"  -d{N}:  set dictionary - [0, 29], default: 23 (8MB)\n" +
+            	"  -fb{N}: set number of fast bytes - [5, 273], default: 128\n" +
+            	"  -lc{N}: set number of literal context bits - [0, 8], default: 3\n" +
+            	"  -lp{N}: set number of literal pos bits - [0, 4], default: 0\n" +
+            	"  -pb{N}: set number of pos bits - [0, 4], default: 2\n" +
+            	"  -mf{MF_ID}: set Match Finder: [bt2, bt4], default: bt4\n" +
+            	"  -eos:   write End Of Stream marker\n"
+            	// + "  -si:    read data from stdin\n"
+            	// + "  -so:    write data to stdout\n"
+            	);
+
 http://stackoverflow.com/questions/3057171/lzma-compression-settings-details
 
 A log file will be written to lzma_call_cli_arguments_log.txt within the Tools directory where you can have a look at the command line parameters which Unity3D used to call lzma.exe. You can also find the elapsed time of the compression there.
