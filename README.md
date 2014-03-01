@@ -9,6 +9,8 @@ How to use
 1. Rename your C:\Program Files (x86)\Unity\Editor\Data\Tools\lzma.exe to lzma_real.exe. You can also make a separate backup to a safe place if you wish.
 2. Copy lzma.exe from the "windows binaries" directory (or your custom build from sources) into your Unity3D tools folder
 
+http://stackoverflow.com/questions/3057171/lzma-compression-settings-details
+
 A log file will be written to lzma_call_cli_arguments_log.txt within the Tools directory where you can have a look at the command line parameters which Unity3D used to call lzma.exe. You can also find the elapsed time of the compression there.
 
 How does it work?
